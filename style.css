@@ -114,7 +114,7 @@ body{
     border-radius: 7px;
     font-size: 15px;
     color: black;
-    margin-right: 40px;
+    
     display: none;
 }
 
@@ -138,8 +138,8 @@ body{
     background-color: transparent;
     border-width: 0px;
     color: white;
-    font-size: 36px;
-    padding-top: 37px;
+    font-size: 30px;
+    padding-top: 43px;
     /* align-self: center; */
     padding-right: 30px;
 }
@@ -147,8 +147,8 @@ body{
     background-color: transparent;
     border-width: 0px;
     color: white;
-    font-size: 36px;
-    padding-top: 37px;
+    font-size: 30px;
+    padding-top: 43px;
     /* align-self: center; */
     padding-right: 30px;
 }
@@ -187,6 +187,9 @@ body{
 }
 .company-btn{
     display: none;
+}
+.logo{
+    width: 75%;
 }
 
 }
