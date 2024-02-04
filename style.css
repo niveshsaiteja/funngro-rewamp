@@ -30,6 +30,8 @@ body{
 
 .main-nav{
     background-image: linear-gradient(to right,black,var(--grey),var(--lightgreen),var(--green));
+    position: sticky;
+    top: 0;
 }
 .navbar{
     display: flex;
@@ -60,13 +62,26 @@ body{
   font-size: 18px;   
 }
 
+.navbar2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--green);
+    border-radius: 20px;
+    display: none;
+    
+}
+
 .navigation-btns-burger{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     color: white;
     font-size: 18px;   
-    display: none;
+  
 }
 
 .navigation-btns li{
@@ -114,8 +129,9 @@ body{
     border-radius: 7px;
     font-size: 15px;
     color: black;
+    align-self: center;
     
-    display: none;
+  
 }
 
 .company-btn:hover{
@@ -174,10 +190,7 @@ body{
     height: 100%;
     width: -webkit-fill-available;
 }
-.navigation-btns-burger{
-    flex-direction: column;
-    
-}
+
 .logo-div{
     align-self: start;
 }
