@@ -1,0 +1,192 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--green: rgb(50, 122, 50);
+	--lightgreen: rgb(72, 130, 72);
+	--light-blue: #CFE8FF;
+	--grey: rgb(54, 54, 54);
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+}
+
+/*navbar css*/
+
+.main-nav{
+    background-image: linear-gradient(to right,black,var(--grey),var(--lightgreen),var(--green));
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+   
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    height: 75px;
+}
+
+.logo-div{
+    width: 200px;
+    height: 100px;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-size: 18px;   
+}
+
+.navigation-btns-burger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;   
+    display: none;
+}
+
+.navigation-btns li{
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+.navigation-btns li:hover{
+    color: rgb(0, 215, 0);
+    transition: 0.3s;
+}
+
+.navigation-btns-burger li{
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+.navigation-btns-burger li:hover{
+    color: rgb(0, 215, 0);
+    transition: 0.3s;
+}
+.company-btn{
+    padding: 15px;
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 7px;
+    font-size: 15px;
+    color: black;
+    margin-right: 40px;
+}
+.company-btn-burger{
+    padding: 15px;
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 7px;
+    font-size: 15px;
+    color: black;
+    margin-right: 40px;
+    display: none;
+}
+
+.company-btn:hover{
+    background-color: var(--green);
+    color: white;
+    transition: 0.3s;
+}
+.no-display{
+    display: none;
+}
+.yes-display{
+ display: block;
+}
+
+.navs{
+    display: none;
+}
+
+.burger-action{
+    background-color: transparent;
+    border-width: 0px;
+    color: white;
+    font-size: 36px;
+    padding-top: 37px;
+    /* align-self: center; */
+    padding-right: 30px;
+}
+.cross-action{
+    background-color: transparent;
+    border-width: 0px;
+    color: white;
+    font-size: 36px;
+    padding-top: 37px;
+    /* align-self: center; */
+    padding-right: 30px;
+}
+
+
+.main-nav-background{
+    background-image: linear-gradient(to bottom,black,var(--grey),var(--lightgreen),var(--green));
+}
+
+/*navbar responsive css*/
+
+@media screen and (max-width:800px){
+.main-nav{
+    display: flex;
+    flex-direction: row;
+}
+.navs{
+    display: block;
+}
+
+.navbar{
+    flex-direction: column;
+    height: 100%;
+    width: -webkit-fill-available;
+}
+.navigation-btns-burger{
+    flex-direction: column;
+    
+}
+.logo-div{
+    align-self: start;
+}
+.navigation-btns{
+    display: none;
+    transition: 0.3s;
+}
+.company-btn{
+    display: none;
+}
+
+}
