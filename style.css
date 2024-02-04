@@ -155,7 +155,7 @@ body{
     border-width: 0px;
     color: white;
     font-size: 30px;
-    padding-top: 43px;
+    padding-top: 33px;
     /* align-self: center; */
     padding-right: 30px;
 }
@@ -164,7 +164,7 @@ body{
     border-width: 0px;
     color: white;
     font-size: 30px;
-    padding-top: 43px;
+    padding-top: 33px;
     /* align-self: center; */
     padding-right: 30px;
 }
@@ -180,6 +180,7 @@ body{
 .main-nav{
     display: flex;
     flex-direction: row;
+    height: 100px;
 }
 .navs{
     display: block;
@@ -203,6 +204,7 @@ body{
 }
 .logo{
     width: 75%;
+    height: 75%;
 }
 
 }
