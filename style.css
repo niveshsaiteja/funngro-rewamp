@@ -62,16 +62,29 @@ body{
   font-size: 18px;   
 }
 
+.nav-back{
+    background-color: rgb(50 122 50 / 70%);
+    
+}
 .navbar2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 20px;
     padding: 20px;
-    background-color: var(--green);
-    border-radius: 20px;
+   
+    border-radius: 30px;
     display: none;
+    position: absolute;
+    top: 90px;
+    width: -webkit-fill-available;
+    backdrop-filter: blur(3px);
     
+}
+.navbar2::before{
+    content: '';
+    position: relative;
+    background-color: transparent;
 }
 
 .navigation-btns-burger{
@@ -85,23 +98,23 @@ body{
 }
 
 .navigation-btns li{
-    list-style-type: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 10px;
+    
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px;
 }
 .navigation-btns li:hover{
     color: rgb(0, 215, 0);
     transition: 0.3s;
 }
 
-.navigation-btns-burger li{
+.navigation-btns-burger p{
     list-style-type: none;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
 }
-.navigation-btns-burger li:hover{
+.navigation-btns-burger p:hover{
     color: rgb(0, 215, 0);
     transition: 0.3s;
 }
@@ -126,12 +139,14 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: white;
-    border-radius: 7px;
+    border-radius: 26px;
     font-size: 15px;
     color: black;
-    align-self: center;
-    
-  
+}
+.company-btn-burger:hover{
+    background-color: var(--green);
+    color: white;
+    transition: 0.3s;
 }
 
 .company-btn:hover{
@@ -155,7 +170,7 @@ body{
     border-width: 0px;
     color: white;
     font-size: 30px;
-    padding-top: 33px;
+    padding-top: 26px;
     /* align-self: center; */
     padding-right: 30px;
 }
@@ -164,7 +179,7 @@ body{
     border-width: 0px;
     color: white;
     font-size: 30px;
-    padding-top: 33px;
+    padding-top: 26px;
     /* align-self: center; */
     padding-right: 30px;
 }
@@ -174,13 +189,22 @@ body{
     background-image: linear-gradient(to bottom,black,var(--grey),var(--lightgreen),var(--green));
 }
 
+.icons{
+    font-size: 25px;
+}
+
 /*navbar responsive css*/
+@media screen and (min-width:450px){
+    .navbar2{
+        width: 20rem;
+    }
+}
 
 @media screen and (max-width:800px){
 .main-nav{
     display: flex;
     flex-direction: row;
-    height: 100px;
+    height: 85px;
 }
 .navs{
     display: block;
