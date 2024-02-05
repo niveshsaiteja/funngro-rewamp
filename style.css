@@ -41,7 +41,7 @@ body{
     justify-content: space-between;
     position: sticky;
     align-items: center;
-    height: 75px;
+    height: 60px;
 }
 
 .logo-div{
@@ -227,4 +227,116 @@ body{
     height: 75%;
 }
 
+}
+/*background colors css*/
+.bg-green{
+    width: 30vw;
+    height: 30vh;
+    background-color: var(--green);
+    filter: blur(141px);
+    position: absolute;
+    bottom: 40px;
+    
+}
+
+.bg-green2{
+    width: 30vw;
+    height: 30vh;
+    background-color: var(--green);
+    filter: blur(141px);
+    position: absolute;
+    /* bottom: 100px; */
+    right: 0;
+    top: 124px;
+    
+}
+
+/*first section css*/
+
+.first-section{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.first-section-content{
+    width: 50%;
+    padding: 100px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.first-section-content-heading{
+    font-size: 70px;
+    font-weight: bold;
+    color: var(--green);
+}
+.first-section-content-para{
+    font-size: 20px;
+    font-weight: 400;
+}
+.app-cont{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.app-cont p{
+    font-size: 20px;
+}
+.app-img{
+    width: 120px;
+    padding: 10px;
+}
+
+.first-section-img{
+    width: 50%;
+}
+.mobile-img{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+/*first container responsiveness css*/
+
+@media screen and (max-width:900px){
+    .first-section {
+        flex-direction: column;
+    }    
+
+    .first-section-content {
+        width: 88%;
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 91px;
+    }
+
+    .first-section-content-heading {
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--green);
+    }
+
+    .app-cont {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        /* width: 80vw; */
+    }
+    .app-img {
+        width: 120px;
+        padding: 10px;
+    }
+    
+    .first-section-img {
+        width: 100%;
+    }
+    .mobile-img {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        box-sizing: border-box;
+    }
 }
