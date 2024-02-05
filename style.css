@@ -75,16 +75,12 @@ body{
    
     border-radius: 30px;
     display: none;
-    position: absolute;
+    position: sticky;
     top: 90px;
+    right: 0;
     width: -webkit-fill-available;
     backdrop-filter: blur(3px);
     
-}
-.navbar2::before{
-    content: '';
-    position: relative;
-    background-color: transparent;
 }
 
 .navigation-btns-burger{
@@ -98,10 +94,10 @@ body{
 }
 
 .navigation-btns li{
-    
-    margin-left: 2px;
-    margin-right: 2px;
-    padding: 5px;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
 }
 .navigation-btns li:hover{
     color: rgb(0, 215, 0);
@@ -109,10 +105,10 @@ body{
 }
 
 .navigation-btns-burger p{
-    list-style-type: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 10px;
+   
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px;
 }
 .navigation-btns-burger p:hover{
     color: rgb(0, 215, 0);
