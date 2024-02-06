@@ -1,4 +1,4 @@
-console.log("working")
+console.log("smile bro 😊");
 
 let burgerAction = document.getElementById("burgerAction");
 let crossAction = document.getElementById("crossAction");
