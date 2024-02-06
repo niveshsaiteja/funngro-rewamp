@@ -236,7 +236,7 @@ body{
     filter: blur(141px);
     position: absolute;
     bottom: 40px;
-    
+    z-index: -1;
 }
 
 .bg-green2{
@@ -248,7 +248,7 @@ body{
     /* bottom: 100px; */
     right: 0;
     top: 124px;
-    
+    z-index: -1;
 }
 
 /*first section css*/
@@ -338,5 +338,96 @@ body{
         height: 100%;
         padding: 0px;
         box-sizing: border-box;
+    }
+}
+
+/*second container css*/
+
+.second-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.second-container-heading{
+    font-size: 40px;
+    align-self: center;
+}
+.second-container-para{
+    font-size: 20px;
+    align-self: center;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 17px;
+    margin: 20px;
+    width: 18%;
+    align-items: center;
+    box-shadow: 1px 2px 8px 0px #7f7f7f;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-width: 4px;
+    border-color: var(--grey);
+    border-radius: 7px;
+
+}
+
+.card:hover{
+    border-color: #1c9700;
+    transition: 0.3s;
+    box-shadow: 1px 2px 8px 0px  #1c9700;
+    color: #1c9700;
+}
+
+.card-icon{
+    font-size: 30px;
+}
+
+.card-heading{
+    font-size: 20px;
+}
+.card-para{
+    font-size: 15px;
+}
+
+.bg-green3{
+    width: 30vw;
+    height: 30vh;
+    background-color: var(--green);
+    filter: blur(141px);
+    position: absolute;
+    bottom: -626px;
+    z-index: -1;
+}
+
+.bg-green4{
+    width: 30vw;
+    height: 30vh;
+    background-color: var(--green);
+    filter: blur(141px);
+    position: absolute;
+    /* bottom: 100px; */
+    right: 0;
+    top: 739px;
+    z-index: -1;
+}
+
+@media screen and (max-width:900px){
+    .card{
+        width: 30%;
+    }
+}
+@media screen and (max-width:460px){
+    .card{
+        width: 70%;
     }
 }
