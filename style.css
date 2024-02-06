@@ -82,6 +82,7 @@ body{
     width: -webkit-fill-available;
     backdrop-filter: blur(3px);
     height: 30vh;
+    z-index: 1;
     
 }
 
@@ -260,6 +261,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .first-section-content{
     width: 50%;
@@ -305,6 +307,7 @@ body{
 @media screen and (max-width:900px){
     .first-section {
         flex-direction: column;
+        height: 100%;
     }    
 
     .first-section-content {
@@ -349,7 +352,7 @@ body{
     flex-direction: column;
     padding: 10px;
     margin: 10px;
-    margin-bottom: 100px;
+    height: 100vh;
 }
 
 .second-container-heading{
@@ -431,6 +434,7 @@ body{
     }
     .second-container{
         margin-bottom: 10px;
+        height: 100%;
     }
 }
 @media screen and (max-width:460px){
@@ -477,7 +481,7 @@ body{
     border-radius: 7px;
     margin: 10px;
     padding: 10px;
-    box-shadow: 1px 2px 8px 0px #7f7f7f;
+    
 
 }
 .box:hover{
@@ -584,6 +588,7 @@ align-self: center;
     justify-content: center;
     height: 100vh;
     padding: 30px;
+    z-index: -1;
 }
 
 .fourth-container div{
@@ -606,6 +611,12 @@ align-self: center;
    justify-content: center;
     overflow: hidden;
     -webkit-mask-image: linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);
+}
+
+@media screen and (max-width:460px){
+    .first-slider{
+        width: 90vw;
+    }
 }
 .first-slider div{
     white-space: nowrap;
@@ -650,6 +661,9 @@ align-self: center;
     border-style: solid;
     border-width: 1px;
     border-color: grey;
+    box-shadow: rgb(0 156 0 / 43%) 1px 2px 8px 0px;
+
+    
 }
 
 .first-slider div div:hover{
@@ -661,5 +675,65 @@ align-self: center;
     padding: 1px;
     align-self: center;
     width: 117px;
+
+}
+
+.first-second-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+height: 75vh;
+align-items: center;
+}
+.long-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 27px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+    border-radius: 10px;
+    padding: 5px;
+    background-image: url(resources/bg-green.png);
+    background-size: cover;
+}
+.inner-card{
+    
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.inner-card-img{
+    width: 65px;
+    height: 65px;
+    align-self: center;
+    background-color: white;
+    border-radius: 76px;
+    padding: 10px;
+}
+.inner-card-content{
+    padding: 5px;
+}
+.count{
+ font-size: 30px;
+ padding: 5px;
+
+ margin: 0px;
+}
+.count-para{
+    font-size: 15px;
+    padding: 5px;
+    margin: 0px;
+}
+
+@media screen and (max-width:460px){
+    .first-second-container{
+height: 100%;
+margin: 20px;
+    }
 
 }
